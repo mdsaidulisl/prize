@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+/* headersection */
+.headersection{
+    text-align: center;
+    padding: 40px 0;
+
+}
+.header-text{
+
+
+}
+.header-text h6{
+    color:#537def ;
+    font-weight: 500;
+
+}
+.header-text h3{
+    margin-top: 10px ;
+    margin-bottom: 30px;
+    font-size: 35px;
+    position: relative;
+
+}
+.header-text h3::after {
+    content: "";
+    position: absolute;
+    top: 55px;
+    left: 48%;
+    width: 60px;
+    height: 2px;
+    background-color: #3763eb;
+}
+.header-text p{
+    color:#8f8e8f ;
+}
+
+/* singleprize */
+
+.singleprize {
+    padding: 33px 93px;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px #ddd;
+    width: 395px;
+    margin: 50px 0;
+    transition: .5s;
+}
+
+.singleprize:hover .prizebatton{
+
+    background-color: #fff;
+    color: #043bff;
+}
+.singleprize:hover  {
+
+    background-color: #3763eb;
+    color: #fff;
+}
+.singleprize:hover ul{
+
+    color: #fff;
+}
+.singleprize:hover  h3{
+
+    color: #fff;
+}
+
+
+.singleprize p{
+    margin-bottom: 30px;
+    color: #fff;
+ 
+}
+
+/* animation */
+
+.animation{
+    transition: .4s;
+}
+.animation h3{
+    color: #fff;
+    animation-name: example;
+    animation-duration: 4s;
+}
+@keyframes example {
+    from {background-color: rgb(255, 255, 255);}
+    to {background-color: rgb(28, 28, 25);}
+  }
+
+
+
+.prize {
+    height: 144px;
+    width: 207px;
+    border-bottom: 1px solid #ddd;
+    margin-left: auto;
+}
+
+.singleprize h6{
+    margin-bottom: 20px;
+  
+}
+.singleprize h1 {
+    font-size: 37px;
+}
+
+.singleprize ul {
+    list-style: none;
+    line-height: 40px;
+    margin-top: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #848687;
+    margin-left: -26px;
+    transition: .4s;
+}
+.singleprize .prizebatton{
+    text-decoration: none;
+    padding: 9px 27px;
+    display: inline-block;
+    margin-top: 8px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    background-color: #043bff;
+    color: #fff;
+    border: 1px solid #fff;
+    position: relative;
+    z-index: 1;
+    transition: .4s;
+}
+.singleprize .prizebatton::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-radius: 30px;
+    background-color: #043bff;
+    color:#fff ;
+    z-index: -1;
+    transition: .4s;
+}
+.singleprize .prizebatton:hover::after{
+    width: 100%;
+    color: #fff;
+}
+.singleprize .prizebatton:hover{
+    
+    color: #fff;
+}
+
+/* bannar-section */
+
+.bannar-section{
+    text-align: center;
+    padding: 190px 0;
+    background-image: url(./img/free-bg.jpg);
+    background-position: center;
+    background-size:cover ;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    
+}
+
+.bannar-section::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(32, 81, 227, 0.708);
+    z-index: -1;
+
+}
+.bannar-text {
+    color: #ffffff;
+    width: 473px;
+    margin: auto;
+}
+
+.bannar-text h2{
+    margin-top: 10px ;
+    margin-bottom: 40px ;
+    position: relative;
+
+}
+.bannar-text h2::after {
+    content: "";
+    position: absolute;
+    top: 99px;
+    left: 207px;
+    width: 60px;
+    height: 2px;
+    background-color: #ffffff;
+}
+
+.bannar-text .batton{
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #ffffff;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #0038de;
+    margin-top: 30px;
+    position: relative;
+    z-index: 1;
+}
+.bannar-text .batton::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    display: inline-block;
+    padding: 0;
+    background-color: #3763eb;
+    border-radius: 30px;
+    z-index: -1;
+    transition: .4s;
+    
+}
+.bannar-text .batton:hover::after{
+    width: 100%;
+ 
+}
+.bannar-text .batton:hover{
+    color: #ffffff;
+    
+}
+
+/* .sign-section */
+
+.sign-section{
+    padding: 50px 0;
+
+}
+.signtext{
+    padding: 40px ;
+    background-color: #3763eb;
+    color: #ffffff;
+
+
+}
+.signtext h3{
+    margin-bottom: 10px;
+
+
+}
+
+.signtext input {
+    margin-top: 13px;
+    border-radius: 30px;
+    width: 100%;
+    padding: 4px 23px;
+}
+.signtext button {
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    margin-top: 12px;
+    background-color: #3763eb;
+    width: 178px;
+    padding-bottom: 10px;
+    color: #fff;
+    margin-left: -10px;
+}
+
+.gettext {
+    padding: 10px;
+    width: 400px;
+    margin-left: 20px;
+    border-style: none;
+    box-shadow: 0px 0px 18px #ddd;
+}
+.gettext h3{
+    font-size: 26px; 
+    margin-bottom: 50px;
+    color: #33343c;   
+}
+.gettext button {
+    padding: 4px 20px;
+    border-radius: 30px;
+}
